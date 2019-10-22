@@ -1,0 +1,151 @@
+<html>
+<head>
+<link rel="stylesheet" href="/style/form.css" />
+<script language=javascript type=text/javascript src="/funcs.js"></script>
+<script language=javascript type=text/javascript src="/bas_ether.js"></script>
+</head>
+<body bgcolor=#ffffff>
+<div class="page_title">Self Config</div>
+<div class="fix_button">
+<table width="100%" border="0" cellpadding="0" cellspacing="2">
+<tr>
+	<td nowrp colspan="2" align="center">
+	<input class="apply_bt" type="button" name="Apply" id="apply" value="Apply" />
+	<input class="cancel_bt" type="button" name="Cancel" id="cancel" value="Cancel" />
+	<input class="common_bt" type="button" name="Default" id="Default" value="Default" />
+</tr>
+</table>
+</div>
+<div id="bas_top">
+<table cellspacing="5" cellPadding="0" width="100%" border="0">
+<tr>
+	<td nowrap>
+	<b>Do you want to enable telnet?<b>
+	</td>
+</tr>
+<tr>
+	<td nowrap>
+	<input type="radio" name="enabletelnet" id="enable_telnet" value="1">Yes
+	</td>
+</tr>
+<tr>
+	<td nowrap>
+	<input type="radio" name="enabletelnet" id="disable_telnet" value="2">No
+	</td>
+</tr>
+</div>
+<tr><td><hr class="blueBar" /></td></tr>
+<div id="bas_Middle" class="main_bas">
+<table cellspacing="5" cellPadding="0" width="100%" border="0">
+<tr>
+	<td nowrap>
+	<h2>Hardware config</h2>
+	</td>
+</tr>
+<tr>
+	<td nowrap>
+	<b>Change your login password and name!</b>
+	</td>
+</tr>
+<tr>
+	<td nowrap>
+	<b>Login name</b>
+	</td>
+	<td nowrap align="right">
+	<input type="text" name="loginname" id="login_name" size="20" maxlength="60" value="admin">
+	</td>
+</tr>
+<tr>
+	<td nowrap>
+	<b>Login password</b>
+	</td>
+	<td nowrap align="right">
+	<input type="text" name="loginpassword" id="login_password" size="20" maxlength="60" value="******">
+	</td>
+</tr>
+</table>
+<hr />
+<table cellspacing="5" cellPadding="0" width="100%" border="0">
+<tr>
+	<td nowrap>
+	<b>Change the name you want!</b>
+	</td>
+</tr>
+<tr>
+	<td nowrap>
+	<b>netbiosname</b>
+	</td>
+	<td nowrap align="right">
+	<input type="text" name="netbiosname" id="net_biosname" size="20" maxlength="60">
+	</td>
+</tr>
+
+<tr>
+	<td nowrap>
+	<b>wan_hostname</b>
+	</td>
+	<td nowrap align="right">
+	<input type="text" name="wanhostname" id="wan_hostname" size="20" maxlength="60">
+	</td>
+</tr>
+<tr>
+	<td nowrap>
+	<b>Device_name</b>
+	</td>
+	<td nowrap align="right">
+	<input type="text" name="devicename" id="device_name" size="20" maxlength="60">
+	</td>
+</tr>
+<tr>
+	<td nowrap>
+	<b>ap_netbiosname</b>
+	</td>
+	<td nowrap align="right">
+	<input type="text" name="apbiosname" id "ap_biosname" size="20" maxlength="60">
+	</td>
+</tr>
+</table>
+<hr class="blueBar" />
+<table cellspacing="3" cellPadding="0" width="100%" border="0">
+<tr>
+	<td nowrap colspan="2">
+	<h2>Wireless config</h2>
+	</td>
+</tr>
+<tr>
+	<td nowrap colspan="2">
+	<input type="checkbox" name="enable_ssid_seperate" id="enable_ssid_seperate" value="0">Allow wireless1 seperate 2.4G/5G?
+	</td>
+</tr>
+<tr>
+	<td nowrap colspan="2">
+	<b>Wireless1 5G ssid</b>
+	</td>
+	<td nowrap colspan="2" align="right">
+	<input type="text" name="wireless_5G_ssid" id="wireless_5G_ssid" size="20" maxlength="60">
+	</td>
+<tr>
+<tr>
+	<td nowrap colspan="2">
+	<b>Wireless1 5G passward</b>
+	</td>
+	<td nowrap colspan="2" align="right">
+	<input type="text" name="wireless_5G_passwd" id="wireless_5G_passwd" siea="20" maxlength="60">
+	</td>
+</tr>
+<tr>
+	<td nowrap colspan="2">
+	<b>Security Options</b>
+	</td>
+	<td nowrap colspan="2" align="right">
+	<select name="security_options" id="sec_options" size="1">
+	<option id="none" selected>None</option>
+	<option id="wpa2-psk">WPA2-PSK</option>
+	<option id="wpa-psk">WPA-PSK</option>
+	</select>
+	</td>
+<tr>
+</table>
+<hr class="blueBar" />
+</body>
+</html>
